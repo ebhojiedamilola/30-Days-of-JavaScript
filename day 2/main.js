@@ -1,4 +1,4 @@
-// EXERCISE 1 //
+// EXERCISE LEVEL 1 //
 //1
 const challenge = "30 Days of JavaScript";
 
@@ -49,7 +49,7 @@ console.log(str.indexOf('a'));
 console.log(str.lastIndexOf('a')); 
 
 //17
-let sentence = "You cannot end a sentence with because because because is a conjunction";
+const sentence = "You cannot end a sentence with because because because is a conjunction";
 console.log(sentence.indexOf('because')); 
 
 //18
@@ -71,15 +71,15 @@ console.log(str.endsWith('JavaScipt'));
 console.log(str.match('a'));
 
 //24
-let str1 = "30 Days of ";
-let str2 = "JavaScript";
+const str1 = "30 Days of ";
+const str2 = "JavaScript";
 console.log(str1.concat(str2));
 
 //25
 console.log(str.repeat(2));
 
 
-// EXERCISE 2 //
+// EXERCISE LEVEL 2 //
 //1
 console.log("The quote 'There is no exercise better for the heart than reaching down and lifting people up.'");
 
@@ -87,22 +87,22 @@ console.log("The quote 'There is no exercise better for the heart than reaching 
 console.log('"Love is not patronizing and charity isnt about pity, it is about love."');
 
 //3
-let Num = '10';
+const Num = '10';
 console.log(typeof Num === typeof 10);
-let num = parseInt(Num);
+const num = parseInt(Num);
 console.log(typeof num == typeof 10)
 
 //4
-let floatNum = parseFloat('9.8');
+const floatNum = parseFloat('9.8');
 console.log(floatNum == 10);
-floatNum = Math.round(floatNum)
+floatNum1 = Math.round(floatNum)
 console.log(floatNum == 10)
 
 //5
 console.log('python'.includes('on') && 'jargon'.includes('on'));
 
 //6
-let sentence1 = 'I hope this course is not full of jargon';
+const sentence1 = 'I hope this course is not full of jargon';
 console.log(sentence1.includes('jargon'));
 
 //7
@@ -118,8 +118,8 @@ let randomnumber3 = Math.floor(Math.random() * 254);
 console.log(randomnumber3);
 
 //10
-let str3 = "JavaScript";
-let randomnum = Math.floor(Math.random() * str3.length);
+const str3 = "JavaScript";
+const randomnum = Math.floor(Math.random() * str3.length);
 console.log(str3[randomnum]);
 
 //11
@@ -130,23 +130,43 @@ console.log("4\t1\t4\t16\t64");
 console.log("5\t1\t5\t25\t125");
 
 //12
-let sentence2 = "You cannot end a sentence with because because because is a conjunction";
+const sentence2 = "You cannot end a sentence with because because because is a conjunction";
 let result = sentence2.replace("because because because", "");
 console.log(result);
 
 
-// EXERCISE 3 //
+// EXERCISE LEVEL 3 //
 //1
-let sentence3 = "Love is the best thing in this world.Some found their love and some are still looking for their love.";
-let countLove = sentence3.match('love').length;
+const sentence3 = "Love is the best thing in this world.Some found their love and some are still looking for their love.";
+const countLove = sentence3.match(/love/gi).length;
 console.log(countLove);
 
 //2
-let sentence4 = "You cannot end a sentence with because because because is a conjuction";
-let countBecause = sentence4.match('because').length;
+const sentence4 = "You cannot end a sentence with because because because is a conjuction";
+const countBecause = sentence4.match(/because/g).length;
 console.log(countBecause);
 
-let sentence5 = "'%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching'";
-// let text = 
+//3
+const sentence5 =
+  '%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching';
 
-// let text1 = ""
+const cleanPattern = /[^a-zA-Z0-9 ]/gi;
+
+const cleanedSentence = sentence5.replace(cleanPattern, '');
+console.log(cleanedSentence);
+const cleanedSentenceArray = cleanedSentence.split(' ');
+console.log(cleanedSentenceArray);
+
+const mostFrequent = cleanedSentenceArray.reduce(
+  (prev, curr, index, arr) =>
+    arr.filter((item) => item === prev).length >=
+    arr.filter((item) => item === curr).length
+      ? prev
+      : curr,
+  null
+);
+
+console.log(mostFrequent);
+
+//4
+
