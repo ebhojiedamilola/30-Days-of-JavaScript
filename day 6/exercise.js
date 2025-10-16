@@ -188,8 +188,336 @@ for (let i = 0; i < countries.length; i++) {
 console.log(countryData);
 
 //7
-const countriesWithLand = [];
-for (let country of countries ) 
+const countries2 = [
+  'Albania',
+  'Bolivia',
+  'Canada',
+  'Denmark',
+  'Ethiopia',
+  'Finland',
+  'Germany',
+  'Hungary',
+  'Ireland',
+  'Iceland',
+  'Japan',
+  'Kenya'
+];
+let countryArr = [];
+for (let i = 0; i < countries2.length; i++) {
+  let country = countries2[i];
+  let abbreviation = country.slice(0, 3).toUpperCase();
+  let length = country.length; 
+  countryArr.push([country, abbreviation, length]);
+}
+
+console.log(countryArr);
+
+//8
+const countries3 = [
+  'Albania',
+  'Bolivia',
+  'Canada',
+  'Denmark',
+  'Ethiopia',
+  'Finland',
+  'Germany',
+  'Hungary',
+  'Ireland',
+  'Iceland',
+  'Japan',
+  'Kenya'
+];
+
+let countriesWithLand = [];
+
+for (let i = 0; i < countries3.length; i++) {
+  if (countries3[i].includes('land')) {
+    countriesWithLand.push(countries2[i]);
+  }
+}
+
+if (countriesWithLand.length > 0) {
+  console.log(countriesWithLand);
+} else {
+  console.log('All these countries are without land');
+}
+
+//9
+const countries4 = [
+  'Albania',
+  'Bolivia',
+  'Canada',
+  'Denmark',
+  'Ethiopia',
+  'Finland',
+  'Germany',
+  'Hungary',
+  'Ireland',
+  'Japan',
+  'Kenya'
+];
+['Japan', 'Kenya']
+const longestCountry = countries4.reduce((longest, current) =>
+  current.length > longest.length ? current : longest
+);
+
+console.log(longestCountry); 
+
+//10
+const countries5 = [
+  'Albania',
+  'Bolivia',
+  'Canada',
+  'Denmark',
+  'Ethiopia',
+  'Finland',
+  'Germany',
+  'Hungary',
+  'Ireland',
+  'Japan',
+  'Kenya'
+];
+
+const fiveCharCountries = countries5.filter(country => country.length === 5);
+console.log(fiveCharCountries);
+
+//11
+const webTechs = [
+  'HTML',
+  'CSS',
+  'JavaScript',
+  'React',
+  'Redux',
+  'Node',
+  'MongoDB'
+];
+const longestTech = webTechs.reduce((longest, current) =>
+  current.length > longest.length ? current : longest
+);
+console.log(longestTech);
+
+//12
+const webTechs1 = [
+  'HTML',
+  'CSS',
+  'JavaScript',
+  'React',
+  'Redux',
+  'Node',
+  'MongoDB'
+];
+const webTechsArray = [];
+for (const tech of webTechs) {
+  webTechsArray.push([tech, tech.length]);
+}
+console.log(webTechsArray);
+
+//13
+const mernStack = ['MongoDB', 'Express', 'React', 'Node'];
+let acronym = '';
+for (const stack of mernStack) {
+  acronym += stack[0];
+}
+console.log(acronym); 
+
+//14
+const webTechs2 = ["HTML", "CSS", "JS", "React", "Redux", "Node", "Express", "MongoDB"];
+for (const tech of webTechs) {
+  console.log(tech)
+}
+
+//15
+const fruits = ['banana', 'orange', 'mango', 'lemon'];
+const reversedFruits = [];
+for (let i = fruits.length - 1; i >= 0; i--) {
+  reversedFruits.push(fruits[i]);
+}
+console.log(reversedFruits);
+
+//16
+ const fullStack = [
+    ['HTML', 'CSS', 'JS', 'React'],
+    ['Node', 'Express', 'MongoDB']
+  ]
+for (const stack of fullStack) {
+  for (const tech of stack) {
+    console.log(tech);
+  }
+}
+
+//EXERCISE LEVEL 3
+//1
+const countries6 = [
+  'Albania',
+  'Bolivia',
+  'Canada',
+  'Denmark',
+  'Ethiopia',
+  'Finland',
+  'Germany',
+  'Hungary',
+  'Ireland',
+  'Japan',
+  'Kenya'
+];
+const Countries6 = countries6.slice();
+console.log(Countries6);
+
+//2
+const countries7 = [
+  'Albania',
+  'Bolivia',
+  'Canada',
+  'Denmark',
+  'Ethiopia',
+  'Finland',
+  'Germany',
+  'Hungary',
+  'Ireland',
+  'Japan',
+  'Kenya'
+];
+const sortedCountries = countries7.slice().sort();
+console.log(sortedCountries);
+
+//3
+const webTechs3 = [
+  'HTML',
+  'CSS',
+  'JavaScript',
+  'React',
+  'Redux',
+  'Node',
+  'MongoDB'
+];
+const sortedWebTechs = webTechs3.slice().sort();
+console.log(sortedWebTechs);
+
+const mernStack1 = ['MongoDB', 'Express', 'React', 'Node'];
+const sortedMenStack = mernStack1.slice().sort();
+console.log(sortedMenStack);
+
+//4
+const countries8 = [
+  'Albania',
+  'Bolivia',
+  'Canada',
+  'Denmark',
+  'Ethiopia',
+  'Finland',
+  'Germany',
+  'Hungary',
+  'Ireland',
+  'Japan',
+  'Kenya'
+];
+const countriesWithLand1 = countries8.filter(country => country.includes('land'));
+
+console.log(countriesWithLand1);
+
+//5
+const countries9 = [
+  'Albania',
+  'Bolivia',
+  'Canada',
+  'Denmark',
+  'Ethiopia',
+  'Finland',
+  'Germany',
+  'Hungary',
+  'Ireland',
+  'Japan',
+  'Kenya'
+];
+['Japan', 'Kenya']
+const longestCountry1 = countries9.reduce((longest, current) =>
+  current.length > longest.length ? current : longest
+);
+
+console.log(longestCountry1);
+
+//6
+const countries10 = [
+  'Albania',
+  'Bolivia',
+  'Canada',
+  'Denmark',
+  'Ethiopia',
+  'Finland',
+  'Germany',
+  'Hungary',
+  'Ireland',
+  'Japan',
+  'Kenya'
+];
+const countriesWithLand2 = countries10.filter(country => country.includes('land'));
+
+console.log(countriesWithLand2);
+
+//7
+const countries11 = [
+  'Albania',
+  'Bolivia',
+  'Canada',
+  'Denmark',
+  'Ethiopia',
+  'Finland',
+  'Germany',
+  'Hungary',
+  'Ireland',
+  'Japan',
+  'Kenya'
+];
+const fourCharCountries = countries11.filter(country => country.length === 4);
+
+console.log(fourCharCountries);
+
+//8
+const countries12 = [
+  'Albania',
+  'Bolivia',
+  'Canada',
+  'Denmark',
+  'Ethiopia',
+  'Finland',
+  'Germany',
+  'Hungary',
+  'Ireland',
+  'Japan',
+  'Kenya'
+];
+const twoWordsCountries = countries12.filter(country => country.length === 2);
+
+console.log(twoWordsCountries);
+
+//9
+const countries0 = [
+  'Albania',
+  'Bolivia',
+  'Canada',
+  'Denmark',
+  'Ethiopia',
+  'Finland',
+  'Germany',
+  'Hungary',
+  'Ireland',
+  'Japan',
+  'Kenya'
+];
+const reversedCapitalizedCountries = [];
+for (let i = countries0.length - 1; i >= 0; i--) {
+  reversedCapitalizedCountries.push(countries0[i].toUpperCase());
+}
+console.log(reversedCapitalizedCountries);
+
+
+
+
+
+
+
+
+
 
 
 
