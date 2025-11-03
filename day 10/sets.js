@@ -2918,7 +2918,21 @@ const countries_data = [
 			"area": 390757
 	}
 ]
-const filteredLang = countries_data.map(country => country.languages)
+const filteredLang = countries_data.map(country => country.languages).flat()
 console.log(filteredLang)
-const setOfUniqueLang = new Set(filteredLang.flat());
+const setOfUniqueLang = new Set(filteredLang);
 console.log(setOfUniqueLang)
+
+const counts = [];
+const count = {};
+
+for (const langs of setOfUniqueLang) {
+const mappedLangs = countries_data.map((langs) => langs.languages).flat();
+console.log(mappedLangs)
+
+const filteredLanguages = mappedLangs.filter((lang) => lang === langs)
+console.log(filteredLanguages.length)
+counts.push({lang: langs, count: filteredLanguages.length})
+}
+console.log(counts)
+
