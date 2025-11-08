@@ -1,5 +1,5 @@
 //5
-let name1 ="Dami";
+let name1 ="Damilola";
 let job;
 let emptyValue = null;
 let ishappy = false;
