@@ -1,5 +1,5 @@
 // EXCERCISE LEVEL 1
-//1
+//01
 let age = prompt("Enter your age:");
 age = Number(age);
 
