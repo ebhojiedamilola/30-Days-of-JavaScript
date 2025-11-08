@@ -1,5 +1,5 @@
 // EXERCISE LEVEL 1 
-//1
+//01
 const challenge = "30 Days of JavaScript";
 
 //2
