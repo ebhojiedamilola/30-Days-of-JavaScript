@@ -1,5 +1,5 @@
 //EXCERCISE LEVEL 1
-const firstName = "Damilola";
+const firstName = "Dami";
 const LastName = "Ebhojie";
 const country = "Nigeria";
 let city = "lagos";
