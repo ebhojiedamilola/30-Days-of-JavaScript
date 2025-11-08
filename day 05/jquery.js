@@ -3,7 +3,7 @@
 const emptyArr = [];
 
 //2
-const names = ['Dami', 'Rophy', 'Yusroh', 'Ekata', 'Titi', 'Aminah', 'Mimi'];
+const names = ['Dami', 'Rophy', 'Yusroh', 'Ekata', 'Lola', 'Aminah', 'Mimi'];
 
 //3
 console.log(names.length);
