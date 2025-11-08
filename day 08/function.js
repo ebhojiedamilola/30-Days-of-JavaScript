@@ -1,8 +1,8 @@
 //EXERCISE LEVEL 1
-// 1
+//1
 const dog = {};
 
-// 2
+//2
 console.log(dog);
 
 //3

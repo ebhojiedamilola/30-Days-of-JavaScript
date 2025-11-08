@@ -1,7 +1,7 @@
 //EXERCISE LEVEL 1
 //1
 function fullName() {
-  console.log("Ebhojie Damilola");
+  console.log("Ebhojie Oluwadamilola");
 }
 fullName();
 
