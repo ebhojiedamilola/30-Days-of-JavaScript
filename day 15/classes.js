@@ -1,6 +1,6 @@
 //EXERCISE LEVEL 1
 //1
-class animal {
+class Animal {
    constructor (name, age, color, legs) {
       console.log(this)
       this.name = name;
@@ -19,3 +19,21 @@ eat() {
 }
 
 //2
+class Dog extends Animal {
+  constructor(name, age, color, legs) {
+  }
+
+  bark() {
+    return `${this.name} is barking!`;
+  }
+}
+
+class Cat extends Animal {
+  constructor(name, age, color, legs) {
+  }
+
+  meow() {
+    return `${this.name} is Meowing!`;
+  }
+}
+

@@ -8,7 +8,6 @@ const totalAnnualIncome =
   (salaryPerMonth * 12) +
   (coursesPerMonth * 12) +
   bonusAnnual;
-
 console.log(totalAnnualIncome);
 
 //2
