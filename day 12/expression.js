@@ -1,11 +1,26 @@
 //EXERCISE LEVEL 1
-//01
+//1
+const salaryPerMonth = 4000;
+const bonusAnnual = 10000;
+const coursesPerMonth = 5500;
+
+const totalAnnualIncome =
+  (salaryPerMonth * 12) +
+  (coursesPerMonth * 12) +
+  bonusAnnual;
+
+console.log(totalAnnualIncome);
 
 //2
-// points = [-12, -4, -3, -1, 0, 4, 8]
-// sortedPoints = parseInt(points.toString().split('').reverse());
-// distance = sortedPoints[-1] - sortedPoints[0]
-// console.log(distance) 
+const pattern = /-?\d+/g;
+const points = string.match(pattern);
+console.log(points);
+const sortedPoints = points.sort((a, b) => a - b);
+console.log(sortedPoints);
+const distance = sortedPoints.at(-1) - sortedPoints.at(0);
+console.log(distance);
+
+console.log(sortedPoints[sortedPoints.length - 1]); 
 
 //EXERCISE LEVEL 2
 function tenMostFrequentWords(text) {
